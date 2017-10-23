@@ -2168,4 +2168,8 @@
     <!-- aLogcat -->
     <string name="alogcat_title">aLogcat</string>
     <string name="alogcat_summary">Allows reading of system logs</string>
+
+    <string name="twilight_mode_location_dialog">Location disabled</string>
+    <string name="twilight_mode_location_disabled">Location access is disabled</string>
+    <string name="twilight_mode_location_enable">Enable</string>
 </resources>
