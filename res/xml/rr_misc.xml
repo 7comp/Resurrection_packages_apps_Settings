@@ -20,20 +20,20 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/rr_misc_title">
 
-     <PreferenceScreen
+        <PreferenceScreen
             android:key="suspend_actions"
             android:title="@string/screen_state_toggles_title"
             android:icon="@drawable/rr_suspend_icon"
             android:fragment="com.android.settings.rr.SuspendActions" />
 
-     <PreferenceScreen
+        <PreferenceScreen
             android:title="@string/weather_title"
             android:summary="@string/weather_config_title"
             android:icon="@drawable/ic_settings_weather"
             android:fragment="com.android.settings.rr.Weather" />
 
-    <!-- System APP Remover -->
-    <PreferenceScreen
+        <!-- System APP Remover -->
+        <PreferenceScreen
             android:id="@+id/system_app_remover"
             android:key="system_app_remover"
             android:title="@string/system_app_remover"
@@ -41,8 +41,8 @@
             android:summary="@string/system_app_remover_summary"
             android:fragment="com.android.settings.rr.fragments.SystemappRemover" />
 
-     <!-- IME Options -->
-    <PreferenceScreen
+        <!-- IME Options -->
+        <PreferenceScreen
             android:id="@+id/ime_settings"
             android:key="ime_settings"
             android:title="@string/keyboard_ime_title"
@@ -58,25 +58,37 @@
             android:summary="@string/chooser_activity_blacklist_summary"
             android:persistent="false" />
 
-        <PreferenceCategory
+       <!-- aLogcat -->
+       <Preference
+            android:key="alogcat"
+            android:icon="@drawable/rr_alogcat_icon"
+            android:title="@string/alogcat_title"
+            android:summary="@string/alogcat_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="org.jtb.alogcat"
+                android:targetClass="org.jtb.alogcat.LogActivity" />
+       </Preference>
+
+       <PreferenceCategory
             android:key="blocker_options"
             android:title="@string/blocker_category" >
 
-        <Preference
-             android:key="wakelock_blocker"
-             android:fragment="com.android.settings.rr.WakeLockBlocker"
-             android:title="@string/wakelock_blocker_title"
-             android:summary="@string/wakelock_blocker_summary" />
+            <Preference
+                android:key="wakelock_blocker"
+                android:fragment="com.android.settings.rr.WakeLockBlocker"
+                android:title="@string/wakelock_blocker_title"
+                android:summary="@string/wakelock_blocker_summary" />
 
-        <Preference
-             android:key="alarm_blocker"
-             android:fragment="com.android.settings.rr.AlarmBlocker"
-             android:title="@string/alarm_blocker"
-             android:summary="@string/alarm_blocker_summary" />
+            <Preference
+                android:key="alarm_blocker"
+                android:fragment="com.android.settings.rr.AlarmBlocker"
+                android:title="@string/alarm_blocker"
+                android:summary="@string/alarm_blocker_summary" />
 
-        </PreferenceCategory>
+       </PreferenceCategory>
 
-        <PreferenceCategory
+       <PreferenceCategory
             android:key="aspect_ratio_category"
             android:title="@string/aspect_ratio_category_title">
 
@@ -105,5 +117,4 @@
                 android:persistent="false"
                 android:summary="@string/aspect_ratio_apps_info" />
         </PreferenceCategory>
-
 </PreferenceScreen>

@@ -1788,5 +1788,8 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="color_picker_help_palette_title">Palette:\n(RR Remixed, Material and RGB)</string>
   <string name="color_picker_help_palette_summary">Toutes les couleurs de la palette ont une valeur fixe. \nUn clic définit la couleur favorite comme nouvelle couleur, sans l\'appliquer.</string>
   <string name="color_picker_help_do_not_show_title">Ne plus afficher</string>
-<string name="color_picker_help_button_ok_title">OK</string>
+  <string name="color_picker_help_button_ok_title">OK</string>
+  <!-- aLogcat -->
+  <string name="alogcat_title">aLogcat</string>
+  <string name="alogcat_summary">Permet la lecture des logs système</string>
 </resources>

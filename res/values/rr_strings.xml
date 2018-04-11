@@ -2160,4 +2160,8 @@
     <string name="data_activity_arrows_summary">Display data activity arrows</string>
     <string name="wifi_activity_arrows_title">Wifi activity</string>
     <string name="wifi_activity_arrows_summary">Display wifi activity arrows</string>
+ 
+    <!-- aLogcat -->
+    <string name="alogcat_title">aLogcat</string>
+    <string name="alogcat_summary">Allows reading of system logs</string>
 </resources>
