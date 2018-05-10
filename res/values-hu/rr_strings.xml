@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Szöveg</string>
   <string name="status_bar_battery_style_hidden">Rejtett</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Márkalogó</string>
   <string name="status_bar_rr_logo_position">Logó helye</string>
   <string name="status_bar_rr_logo_position_summary">Válassza ki, melyik oldalon jelenjen meg a logó, bal vagy jobb</string>
   <string name="status_bar_logo_right">Jobb</string>

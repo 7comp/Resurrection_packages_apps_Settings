@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Teks</string>
   <string name="status_bar_battery_style_hidden">Tersembunyi</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logo merek</string>
   <string name="status_bar_rr_logo_position">Lokasi logo</string>
   <string name="status_bar_rr_logo_position_summary">Pilih sisi mana untuk menampilkan logo, kiri atau kanan</string>
   <string name="status_bar_logo_right">Kanan</string>

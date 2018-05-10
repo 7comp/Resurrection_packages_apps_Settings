@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Tekst</string>
   <string name="status_bar_battery_style_hidden">Skriveno</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logotip marke</string>
   <string name="status_bar_rr_logo_position">Lokacija logotipa</string>
   <string name="status_bar_rr_logo_position_summary">Odaberite na kojoj će se strani prikazivati logotip: lijevoj ili desnoj</string>
   <string name="status_bar_logo_right">Desno</string>

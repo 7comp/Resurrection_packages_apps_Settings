@@ -429,7 +429,6 @@
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
     <!--RR statusbar logo -->
-    <string name="status_bar_logo_title">Brand logo</string>
     <string name="status_bar_rr_logo_position">Logo location</string>
     <string name="status_bar_rr_logo_position_summary">Choose which side to display the logo on, left or right</string>
     <string name="status_bar_logo_right">Right</string>

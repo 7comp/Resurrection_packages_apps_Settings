@@ -342,7 +342,6 @@
   <string name="status_bar_battery_style_text">テキスト</string>
   <string name="status_bar_battery_style_hidden">非表示</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">RRブランドロゴ</string>
   <string name="status_bar_rr_logo_position">ロゴの位置</string>
   <string name="status_bar_rr_logo_position_summary">どこにロゴを表示するか選択してください</string>
   <string name="status_bar_logo_right">右寄り</string>

@@ -382,7 +382,6 @@ Piksel yoğunluğu <xliff:g name="count" example="520">%d</xliff:g></string>
   <string name="status_bar_battery_style_text">Metin</string>
   <string name="status_bar_battery_style_hidden">Gizle</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Resurrection logosu</string>
   <string name="status_bar_rr_logo_position">Logo konumu</string>
   <string name="status_bar_rr_logo_position_summary">Ekranın üst kısmındaki logonun konumunu seçin, sol yada sağ</string>
   <string name="status_bar_logo_right">Sağ</string>

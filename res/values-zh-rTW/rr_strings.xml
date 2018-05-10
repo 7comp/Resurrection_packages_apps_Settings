@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">文字</string>
   <string name="status_bar_battery_style_hidden">隐藏</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">品牌標誌</string>
   <string name="status_bar_rr_logo_position">標誌的位置</string>
   <string name="status_bar_rr_logo_position_summary">選擇標誌顯示在那一邊，左或右</string>
   <string name="status_bar_logo_right">靠右</string>

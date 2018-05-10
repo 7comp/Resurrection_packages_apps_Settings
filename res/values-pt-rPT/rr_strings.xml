@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Texto</string>
   <string name="status_bar_battery_style_hidden">Não mostrar</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logotipo da marca</string>
   <string name="status_bar_rr_logo_position">Localização</string>
   <string name="status_bar_rr_logo_position_summary">Escolher o lado para mostrar o logotipo: esquerda ou direita</string>
   <string name="status_bar_logo_right">À direita</string>

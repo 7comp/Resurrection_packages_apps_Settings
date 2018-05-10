@@ -382,7 +382,6 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="status_bar_battery_style_text">Texto</string>
   <string name="status_bar_battery_style_hidden">Escondido</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logotipo da rom</string>
   <string name="status_bar_rr_logo_position">Localização do logotipo</string>
   <string name="status_bar_rr_logo_position_summary">Escolher o lado para exibir o logotipo, à esquerda ou direita</string>
   <string name="status_bar_logo_right">Direita</string>

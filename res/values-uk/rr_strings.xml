@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Текст</string>
   <string name="status_bar_battery_style_hidden">Приховати</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Логотип бренду</string>
   <string name="status_bar_rr_logo_position">Розміщення логотипу</string>
   <string name="status_bar_rr_logo_position_summary">Виберіть, яка сторона для відображення логотипу</string>
   <string name="status_bar_logo_right">Справа</string>

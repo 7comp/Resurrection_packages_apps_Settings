@@ -374,7 +374,6 @@
   <string name="status_bar_battery_style_text">글자</string>
   <string name="status_bar_battery_style_hidden">숨김</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">브랜드 로고</string>
   <string name="status_bar_rr_logo_position">로고 위치</string>
   <string name="status_bar_rr_logo_position_summary">로고 표시 위치를 지정합니다.</string>
   <string name="status_bar_logo_right">오른쪽</string>

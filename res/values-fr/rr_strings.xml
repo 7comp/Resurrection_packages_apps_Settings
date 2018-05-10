@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Texte</string>
   <string name="status_bar_battery_style_hidden">Cachée</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logo de la Rom</string>
   <string name="status_bar_rr_logo_position">Position</string>
   <string name="status_bar_rr_logo_position_summary">Choisir de quel côté s\'affiche le logo, à gauche ou à droite</string>
   <string name="status_bar_logo_right">Droite</string>

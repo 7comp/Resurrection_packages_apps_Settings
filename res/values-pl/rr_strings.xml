@@ -382,7 +382,6 @@
   <string name="status_bar_battery_style_text">Tekst</string>
   <string name="status_bar_battery_style_hidden">Ukryte</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logo Resurrection</string>
   <string name="status_bar_rr_logo_position">Lokalizacja</string>
   <string name="status_bar_rr_logo_position_summary">Wybierz po której stronie ma zostać wyświetlone logo</string>
   <string name="status_bar_logo_right">Prawo</string>

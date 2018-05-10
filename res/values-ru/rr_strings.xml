@@ -381,7 +381,6 @@
   <string name="status_bar_battery_style_text">Текст</string>
   <string name="status_bar_battery_style_hidden">Не показывать значок</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Логотип RR</string>
   <string name="status_bar_rr_logo_position">Расположение логотипа</string>
   <string name="status_bar_rr_logo_position_summary">Выберите сторону отображения логотипа, левая или правая</string>
   <string name="status_bar_logo_right">Справа</string>

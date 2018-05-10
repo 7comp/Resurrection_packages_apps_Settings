@@ -383,7 +383,6 @@ Mật độ điểm ảnh
   <string name="status_bar_battery_style_text">Chữ</string>
   <string name="status_bar_battery_style_hidden">Ẩn</string>
   <!--RR statusbar logo -->
-  <string name="status_bar_logo_title">Logo thương hiệu</string>
   <string name="status_bar_rr_logo_position">Vị trí logo</string>
   <string name="status_bar_rr_logo_position_summary">Chọn bên hiển thị logo, trái hoặc phải</string>
   <string name="status_bar_logo_right">Phải</string>
