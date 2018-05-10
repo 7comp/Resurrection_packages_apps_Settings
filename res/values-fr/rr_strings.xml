@@ -35,10 +35,10 @@
   <string name="about_rr_settings">À propos</string>
   <string name="about_rr">À propos</string>
   <string name="about_rr_summary">\@null</string>
-  <string name="about_r0m_summary">Tout savoir sur Resurrection Remix OS</string>
+  <string name="about_r0m_summary">Tout savoir sur RR Remixed OS</string>
   <string name="rr_donate">Faire un don pour le développement</string>
-  <string name="rr_donate_summary">Montrer votre soutien à Resurrection Remix OS</string>
-  <string name="app_name">Resurrection Remix OS</string>
+  <string name="rr_donate_summary">Montrer votre soutien à RR Remixed OS</string>
+  <string name="app_name">RR Remixed OS</string>
   <!-- Battery Styles -->
   <string name="battery_style_title">Style d’icône de la batterie</string>
   <string name="battery_style_port">Portrait</string>
@@ -103,11 +103,11 @@
   <string name="github_apascual89">https://github.com/apascual89</string>
   <string name="rr">Liens</string>
   <string name="rr_website_title">Site Web</string>
-  <string name="rr_website_summary">Obtenir plus d’informations sur Resurrection Remix OS</string>
+  <string name="rr_website_summary">Obtenir plus d’informations sur RR Remixed OS</string>
   <string name="rr_forum_title">Forum</string>
-  <string name="rr_forum_summary">Devenir un membre du forum Resurrection</string>
+  <string name="rr_forum_summary">Devenir un membre du forum RR</string>
   <string name="rr_source_title">GitHub</string>
-  <string name="rr_source_summary">Sources Resurrection Remix OS</string>
+  <string name="rr_source_summary">Sources RR Remixed OS</string>
   <string name="rr_facebook_title">Facebook</string>
   <string name="rr_facebook_summary">Communauté Facebook</string>
   <string name="rr_google_plus_title">Google</string>
@@ -154,9 +154,9 @@
   <string name="rr_lockscreen_target_title">Raccourcis inférieurs</string>
   <!-- Share RR ROM -->
   <string name="share_rr">Partager</string>
-  <string name="share_rr_summary">Faites savoir aux gens que vous utilisez Resurrection Remix OS</string>
-  <string name="share_message">Essayez la ROM Resurrection Remix ! https://plus.google.com/Communities/109352646351468373340</string>
-  <string name="share_chooser_title">Partager Resurrection Remix Os via...</string>
+  <string name="share_rr_summary">Faites savoir aux gens que vous utilisez RR Remixed OS</string>
+  <string name="share_message">Essayez la ROM RR Remixed ! https://plus.google.com/Communities/109352646351468373340</string>
+  <string name="share_chooser_title">Partager RR Remixed Os via...</string>
   <!-- RR Changelog-->
   <string name="changelog_title">Historique des mises à jour</string>
   <string name="changelog_title_summary">Afficher les modifications récentes de la ROM</string>
@@ -1449,8 +1449,8 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="status_bar_logo_position_left">Gauche</string>
   <string name="custom_logo_color">Couleur</string>
   <string name="custom_logo_position">Position</string>
-  <string name="logo0">Resurrection Remix</string>
-  <string name="logo1">Resurrection Lollipop</string>
+  <string name="logo0">RR Remixed</string>
+  <string name="logo1">RR Lollipop</string>
   <string name="logo2">Tuner </string>
   <string name="logo3">Bug droid </string>
   <string name="logo4">Fantôme ballon</string>
@@ -1487,12 +1487,12 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="logo35">Sexe : Masculin</string>
   <string name="logo36">Sexe : Féminin</string>
   <string name="logo37">Pitch Black </string>
-  <string name="logo38">Resurrection Original</string>
-  <string name="logo39">Resurrection Demi</string>
-  <string name="logo40">Resurrection sans cercle</string>
-  <string name="logo41">Araignée 1</string>
-  <string name="logo42">Araignée 2</string>
-  <string name="logo43">Orioles</string>
+  <string name="logo38">RR Original</string>
+  <string name="logo39">RR Demi</string>
+  <string name="logo40">RR sans cercle</string>
+  <string name="logo41">RR yin yang</string>
+  <string name="logo42">Araignée 1</string>
+  <string name="logo43">Araignée 2</string>
   <!-- Clock and date immersive recents-->
   <string name="recents_full_screen_clock_title">Afficher l\'horloge</string>
   <string name="recents_full_screen_clock_summary">Afficher l\'horloge en haut en mode plein écran</string>
@@ -1566,10 +1566,10 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="button24">Base de données moins</string>
   <string name="button25">Cube séquentiel</string>
   <string name="button26">Sablier</string>
-  <string name="button27">Resurrection</string>
+  <string name="button27">RR</string>
   <string name="button28">Android (Stock)</string>
-  <string name="button29">Resurrection Lollipop</string>
-  <string name="button30">Resurrection Nougat</string>
+  <string name="button29">RR Lollipop</string>
+  <string name="button30">RR Nougat</string>
   <string name="animation0">Rotation </string>
   <string name="animation1">Sortie des récents</string>
   <string name="animation2">Sortie Translucide </string>
@@ -1686,7 +1686,7 @@ Ces couleurs sont celles qui teintent l\'arrière-plan flou. Au lieu du gris nor
   <string name="sum6">Quoi d\'autre ?</string>
   <string name="sum7">Je ne suis pas votre bouton F1</string>
   <string name="sum8">Vous ne voulez pas manquer ce truc !</string>
-  <string name="sum9">Bienvenue sur la rom Resurrection Remix</string>
+  <string name="sum9">Bienvenue sur la rom RR Remixed</string>
   <string name="sum10">Ne me passe pas !</string>
   <string name="sum11">As-tu fini tes devoirs ? ツ</string>
   <string name="sum12">Bonjour, je suis votre nouvel assistant</string>
