@@ -1688,6 +1688,14 @@
     <string name="logo41">RR yin yang</string>
     <string name="logo42">Spider 1</string>
     <string name="logo43">Spider 2</string>
+    <string name="logo44">Batman</string>
+    <string name="logo45">Deadpool</string>
+    <string name="logo46">Decepticons</string>
+    <string name="logo47">Ironman</string>
+    <string name="logo48">Minions</string>
+    <string name="logo49">Spiderman</string>
+    <string name="logo50">Superman</string>
+
 
     <!-- Clock and date immersive recents-->
     <string name="recents_full_screen_clock_title">Show clock</string>
