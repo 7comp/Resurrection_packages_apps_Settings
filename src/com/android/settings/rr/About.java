@@ -83,7 +83,6 @@ private static final String RR_ROM_SHARE = "share";
     Preference mFacebookUrl;
     Preference mGoogleUrl;
     Preference mDonateUrl;
-    Preference mPitchBlackUrl;
     Preference mTwitterUrl;
     
     @Override
@@ -92,7 +91,6 @@ private static final String RR_ROM_SHARE = "share";
         addPreferencesFromResource(R.xml.about_rom);
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getContentResolver();
-        mPitchBlackUrl = findPreference("rr_pb");
         mTwitterUrl = findPreference("rr_twitter");
         mSiteUrl = findPreference("rr_website");
         mForumUrl = findPreference("rr_forum");
@@ -124,8 +122,6 @@ private static final String RR_ROM_SHARE = "share";
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mSiteUrl) {
             launchUrl("http://resurrectionremix.com/");
-        } else if (preference == mPitchBlackUrl) {
-            launchUrl("https://play.google.com/store/apps/details?id=pitchblack.origins.westcrip");
         } else if (preference == mTwitterUrl) {
             launchUrl("https://twitter.com/rrosofficial");
         } else if (preference == mForumUrl) {

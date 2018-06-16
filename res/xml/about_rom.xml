@@ -98,13 +98,7 @@
             android:key="rr_donate"
             android:icon="@drawable/rr_donate_icon"
             android:title="@string/rr_donate"
-            android:summary="@string/rr_donate_summary" />
-
-        <Preference
-            android:key="rr_pb"
-            android:icon="@drawable/rr_pb_icon"
-            android:title="@string/rr_pb_title"
-            android:summary="@string/rr_pb_summary" />                			
+            android:summary="@string/rr_donate_summary" />             			
         </PreferenceCategory>
 
         <PreferenceCategory
