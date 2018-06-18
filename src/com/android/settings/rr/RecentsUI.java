@@ -54,6 +54,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
+import com.android.settings.rr.utils.Helpers;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -63,8 +64,10 @@ public class RecentsUI extends SettingsPreferenceFragment implements
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_DATE = "recents_full_screen_date";
     private static final String RECENTS_CLOCK = "recents_full_screen_clock";
+    private static final String RECENTS_TYPE = "recents_layout_style";
 
     private ListPreference mImmersiveRecents;
+    private ListPreference mRecentsType;
     private SwitchPreference mClock;
     private SwitchPreference mDate;
 
@@ -99,6 +102,14 @@ public class RecentsUI extends SettingsPreferenceFragment implements
         mImmersiveRecents.setValue(String.valueOf(mode));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        // recents type
+        mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
+        int style = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_LAYOUT_STYLE, 0, UserHandle.USER_CURRENT);
+        mRecentsType.setValue(String.valueOf(style));
+        mRecentsType.setSummary(mRecentsType.getEntry());
+        mRecentsType.setOnPreferenceChangeListener(this);
 
         mClock = (SwitchPreference) findPreference(RECENTS_CLOCK);
         mDate = (SwitchPreference) findPreference(RECENTS_DATE);
@@ -135,6 +146,14 @@ public class RecentsUI extends SettingsPreferenceFragment implements
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             updateDisablestate(mode);
             return true;
+        } else if (preference == mRecentsType) {
+            int style = Integer.valueOf((String) newValue);
+            int index = mRecentsType.findIndexOfValue((String) newValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_LAYOUT_STYLE, style, UserHandle.USER_CURRENT);
+            mRecentsType.setSummary(mRecentsType.getEntries()[index]);
+            Helpers.showSystemUIrestartDialog(getActivity());
+        return true;
          }
         return false;
     }
