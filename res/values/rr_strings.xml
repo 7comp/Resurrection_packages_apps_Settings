@@ -244,17 +244,19 @@
     <string name="rr_header_title">Header</string>
     <string name="rr_power_panel_title">Power menu</string>
     <string name="rr_toast_title">Toast</string>
+    <string name="rr_notif_settings_title">Notifications</string>
     <string name="toast_text_color">Toast text color</string>
     <string name="toast_icon_color">Toast icon color</string>
+    <string name="bottom_nav_navigation_title">Navigation</string>
 
-    <string name="recents_type_title">Recents type</string>
-    <string name="recents_stock">Stock AOSP</string>
+    <!-- AOSP Recents Style -->
+    <string name="recents_type_title">Recents Layout</string>
+    <string name="recents_stock">Stock</string>
+    <string name="recents_go">Android Go</string>
     <string name="recents_omniswitch">Omniswitch</string>
     <string name="recents_grid">Grid</string>
     <string name="recents_slim">Slim</string>
-    <string name="bottom_nav_navigation_title">Navigation</string>
 
-    <string name="rr_notif_settings_title">Notifications</string>
     <!-- Interface -->
     <string name="interface_other_title">Misc</string>
     <string name="interface_other_summary">Customize miscellaneous contents of the interface</string>
@@ -2017,10 +2019,6 @@
     <!-- reset color -->
     <string name="colors_reset_title">Reset color</string>
     <string name="colors_reset_message">Are you sure you want to reset these colors to default?</string>
-
-    <!-- Recents Grid -->
-    <string name="recents_grid_title">Recents grid</string>
-    <string name="recents_grid_summary">Display stock recents in a grid style</string>
 
     <!-- Recents Lock Icon -->
     <string name="recents_lock_title">Recents lock</string>
