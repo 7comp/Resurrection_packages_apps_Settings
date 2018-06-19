@@ -45,6 +45,7 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import java.util.List;
 import java.util.ArrayList;
 
+
 public class RecentsStyles extends SettingsPreferenceFragment  implements Preference.OnPreferenceChangeListener {
 
 
@@ -56,6 +57,7 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
     private static final String RECENTS_DATE_COLOR = "recents_date_color";
     private static final String RECENTS_CLOCK_COLOR = "recents_clock_color";   
     private static final String FAB_ANIM_STYLE = "fab_animation_style";
+
 
     static final int DEFAULT = 0xffffffff;
     static final int DEFAULT_BG_ICON = 0xff4285f4;	
@@ -72,6 +74,7 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
     private ColorPickerPreference mDateColor;
     
     private ListPreference mClearStyle;
+
     private ListPreference mFabanimation;	
 
 
@@ -97,7 +100,6 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
                     Settings.System.FAB_BUTTON_COLOR, DEFAULT_BG_FAB);
         hexColor = String.format("#%08x", (0xff21272b & intColor));
         mfabColor.setNewPreviewColor(intColor);
-
 
         mClearStyle = (ListPreference) prefSet.findPreference(RECENTS_STYLE);
         mClearStyle.setValue(String.valueOf(Settings.System.getInt(
@@ -157,7 +159,7 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
             Settings.System.putInt(getContentResolver(), Settings.System.CLEAR_RECENTS_STYLE,
                     Integer.valueOf((String) newValue));
             mClearStyle.setValue(String.valueOf(newValue));
-            mClearStyle.setSummary(mClearStyle.getEntry());    
+            mClearStyle.setSummary(mClearStyle.getEntry());
         } else if (preference == mfabColor) {
                 String hex = ColorPickerPreference.convertToARGB(
                         Integer.valueOf(String.valueOf(newValue)));

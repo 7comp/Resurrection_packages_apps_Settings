@@ -68,9 +68,9 @@ public class RecentsUI extends SettingsPreferenceFragment implements
 
     private ListPreference mImmersiveRecents;
     private ListPreference mRecentsType;
+
     private SwitchPreference mClock;
     private SwitchPreference mDate;
-
 
     private final String[] sSupportedActions = new String[] {
         "org.adw.launcher.THEMES",
@@ -147,14 +147,14 @@ public class RecentsUI extends SettingsPreferenceFragment implements
             updateDisablestate(mode);
             return true;
         } else if (preference == mRecentsType) {
-            int style = Integer.valueOf((String) newValue);
+            int mode = Integer.valueOf((String) newValue);
             int index = mRecentsType.findIndexOfValue((String) newValue);
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.RECENTS_LAYOUT_STYLE, style, UserHandle.USER_CURRENT);
             mRecentsType.setSummary(mRecentsType.getEntries()[index]);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_LAYOUT_STYLE, mode, UserHandle.USER_CURRENT);
             Helpers.showSystemUIrestartDialog(getActivity());
-        return true;
-         }
+            return true; 
+        }
         return false;
     }
 

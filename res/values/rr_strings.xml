@@ -499,7 +499,7 @@
     <string name="rr_trans_summary">Customize various elements in notification drawer such as transparency and stroke</string>
     <string name="rr_volume_summary">Customize various elements in volume dialog such as transparency and stroke</string>
     <string name="rr_power_summary">Customize the dim and transparency of the power menu interface</string>
-    <string name="rr_recents_ui_summary">Customize the various elements in recents panel such as membar, immersive recents etc.</string>
+    <string name="rr_recents_ui_summary">Customize the various elements in recents panel such as recents styles, immersive recents etc.</string>
     <string name="recents_clear_all_summary">Replace native clear all button with original floating action button and customize its position</string>
     <string name="omniswitch_summary">Replace stock recents with Omni-recents</string>
     <string name="rr_qs_animation_summary">Enable or disable animations when tapping qs tiles and customize them</string>
