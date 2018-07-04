@@ -2,9 +2,7 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -58,6 +56,7 @@ public class BatterySettings extends SettingsPreferenceFragment implements
     private static final String STATUSBAR_BATTERY_LOW_COLOR_WARNING = "statusbar_battery_bar_battery_low_color";
     private static final String STATUS_BAR_BAR_LOW_COLOR = "statusbar_battery_bar_low_color";
     private static final String STATUS_BAR_BAR_HIGH_COLOR = "statusbar_battery_bar_high_color";
+    private static final String STATUS_BAR_SAVER_COLOR = "status_bar_battery_saver_color";
 
     private ListPreference mBatteryIconStyle;
     private ListPreference mBatteryPercentage;
@@ -67,10 +66,12 @@ public class BatterySettings extends SettingsPreferenceFragment implements
     private ColorPickerPreference mBatteryBarBatteryLowColor;
     private ColorPickerPreference mBatteryBarBatteryLowColorWarn;
     private ColorPickerPreference mBatteryBarBatteryHighColor;
-
-    static final int DEFAULT = 0xffffffff;
-    static final int highColor = 0xff99CC00;
-    static final int lowColor = 0xffff4444;
+    private ColorPickerPreference mSaverColor;
+    
+    public static int BATTERY_SAVER_COLOR_DEFAULT = 0xfff4511e;
+    public static int DEFAULT = 0xffffffff;
+    public static int highColor = 0xff99CC00;
+    public static int lowColor = 0xffff4444;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;
@@ -140,6 +141,13 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         hexColor = String.format("#%08x", (0xff99CC00 & intColor));
         mBatteryBarBatteryHighColor.setNewPreviewColor(intColor);
 
+        mSaverColor = (ColorPickerPreference) findPreference(STATUS_BAR_SAVER_COLOR);
+        mSaverColor.setOnPreferenceChangeListener(this);
+        intColor = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, BATTERY_SAVER_COLOR_DEFAULT);
+        hexColor = String.format("#%08x", (0xfff4511e & intColor));
+        mSaverColor.setNewPreviewColor(intColor);
+
         setHasOptionsMenu(true);
     }
 
@@ -170,36 +178,43 @@ public class BatterySettings extends SettingsPreferenceFragment implements
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(resolver,
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_BAR_COLOR, intHex);
            return true;
          } else if (preference == mBatteryBarBatteryLowColorWarn) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_BAR_BATTERY_LOW_COLOR, intHex);
             return true;
          }  else if (preference == mBatteryBarChargingColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_BAR_CHARGING_COLOR, intHex);
             return true;
          } else if (preference == mBatteryBarBatteryLowColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_BAR_LOW_COLOR, intHex);
             return true;
          } else if (preference == mBatteryBarBatteryHighColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
             int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_BAR_HIGH_COLOR, intHex);
+        } else if (preference == mSaverColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, intHex);
+            return true;
          }
         return false;
     }
@@ -257,6 +272,9 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(getContentResolver(),
                 Settings.System.STATUSBAR_BATTERY_BAR_HIGH_COLOR, highColor);
         mBatteryBarBatteryHighColor.setNewPreviewColor(highColor);
+        Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, BATTERY_SAVER_COLOR_DEFAULT);
+        mSaverColor.setNewPreviewColor(BATTERY_SAVER_COLOR_DEFAULT);
 	}
 
     @Override
