@@ -19,6 +19,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+  <string name="device_category_generic_title">GENERIC</string>
   <string name="device_category_samsung_title">SAMSUNG</string>
   <string name="device_category_sony_title">SONY</string>
   <string name="device_category_lg_title">LG</string>
@@ -57,5 +58,4 @@
   <string name="device_serranoltexx" translatable="false">Galaxy S4 Mini</string>
   <string name="device_serranoltexx_codename" translatable="false">GT-I9195</string>
   <string name="device_serranoltexx_maintainer" translatable="false">Jaiglissechef-i9100</string>
-
 </resources>

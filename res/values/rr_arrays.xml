@@ -1745,6 +1745,8 @@
         <item>@string/lockscreen_clock_selection_analog_sneeky</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -1760,6 +1762,8 @@
         <item>11</item>
         <item>7</item>
         <item>8</item>
+        <item>12</item>
+        <item>13</item>
     </string-array>
 
     <!-- Lockscreen date styles -->
@@ -1887,12 +1891,6 @@
         <item>1.20</item>
         <item>1.25</item>
         <item>1.30</item>
-    </string-array>
-
-    <string-array name="media_scanner_on_boot_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
     </string-array>
 
     <!-- Carbon gestures -->

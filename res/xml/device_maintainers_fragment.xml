@@ -31,5 +31,6 @@
             app:codename="@string/device_serranoltexx_codename"
             app:maintainer="@string/device_serranoltexx_maintainer"
             app:type="phone" />
+
     </PreferenceCategory>
 </PreferenceScreen>
