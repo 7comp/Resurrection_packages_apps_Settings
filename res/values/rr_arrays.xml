@@ -43,6 +43,7 @@
         <item>@string/battery_style_big_circle</item>
         <item>@string/battery_style_big_dotted_circle</item>
         <item>@string/battery_style_square</item>
+        <item>@string/battery_style_dotted_square</item>
         <item>@string/battery_style_text</item>
         <item>@string/battery_style_hidden</item>
     </string-array>
@@ -435,7 +436,7 @@
      </array>
  
      <array name="color_picker_palette">
-         <item>@color/rr_accent</item>
+         <item>@color/theme_accent</item>
          <item>@color/lime</item>
          <item>@color/amber</item>
          <item>@color/light_green</item>
@@ -1734,6 +1735,9 @@
     <!-- Lockscreen clock styles -->
     <string-array name="lockscreen_clock_selection_entries" translatable="false">
         <item>@string/lockscreen_clock_selection_digital</item>
+        <item>@string/lockscreen_clock_selection_digital_accent_full</item>
+        <item>@string/lockscreen_clock_selection_digital_accent_hr</item>
+        <item>@string/lockscreen_clock_selection_digital_accent_min</item>
         <item>@string/lockscreen_clock_selection_digital_bold</item>
         <item>@string/lockscreen_clock_selection_small</item>
         <item>@string/lockscreen_clock_selection_analog</item>
@@ -1751,6 +1755,9 @@
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
         <item>0</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
