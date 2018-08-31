@@ -25,8 +25,6 @@ import android.os.storage.VolumeInfo;
 import android.text.SpannableStringBuilder;
 import android.text.format.DateUtils;
 import android.text.style.TtsSpan;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.android.settings.enterprise.DevicePolicyManagerWrapper;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
@@ -227,16 +225,5 @@ public class UtilsTest {
 
         assertThat(Utils.isProfileOrDeviceOwner(mUserManager, mDevicePolicyManager,
                 PACKAGE_NAME)).isTrue();
-    }
-
-    @Test
-    public void testSetEditTextCursorPosition_shouldGetExpectedEditTextLenght() {
-        final EditText editText = new EditText(mContext);
-        final CharSequence text = "test";
-        editText.setText(text, TextView.BufferType.EDITABLE);
-        final int length = editText.getText().length();
-        Utils.setEditTextCursorPosition(editText);
-
-        assertThat(editText.getSelectionEnd()).isEqualTo(length);
     }
 }
